@@ -13,6 +13,13 @@ function initializePage() {
 		$('.jumbotron h1').text("Javascript is connected");
 	});
 
-	// Add any additional listeners here
+	  // Add any additional listeners here
+    $("a.thumbnail").click(projectClick);
+
 	// example: $("#div-id").click(functionToCall);
+}
+
+function projectClick(e){
+    e.preventDefault();
+    $(this).css("background-color", "#7fff00");
 }
